@@ -31,6 +31,7 @@ __published:	// IDE-managed Components
         TImage *ImageBrick10;
         TImage *ImageBrick12;
         TImage *ImageBrick11;
+        TButton *ButtonPlayAgain;
         void __fastcall TimerBallTimer(TObject *Sender);
         void __fastcall TimerPaddleLeftTimer(TObject *Sender);
         void __fastcall TimerPaddleRightTimer(TObject *Sender);
@@ -38,6 +39,8 @@ __published:	// IDE-managed Components
           TShiftState Shift);
         void __fastcall FormKeyUp(TObject *Sender, WORD &Key,
           TShiftState Shift);
+        void __fastcall ImageBallClick(TObject *Sender);
+        void __fastcall ButtonPlayAgainClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
         __fastcall TForm1(TComponent* Owner);

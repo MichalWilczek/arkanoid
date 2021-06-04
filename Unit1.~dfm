@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = -1475
-  Top = 59
+  Left = -1179
+  Top = 48
   Width = 737
   Height = 540
   Caption = 'Form1'
@@ -26,8 +26,8 @@ object Form1: TForm1
     Brush.Color = clMedGray
   end
   object ImageBall: TImage
-    Left = 616
-    Top = 120
+    Left = 152
+    Top = 160
     Width = 32
     Height = 32
     AutoSize = True
@@ -132,6 +132,7 @@ object Form1: TForm1
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       FFFF}
     Transparent = True
+    OnClick = ImageBallClick
   end
   object ImagePaddle: TImage
     Left = 312
@@ -4508,10 +4509,26 @@ object Form1: TForm1
       8000008000008000008000008000008000008000008000008000008000008000
       0080000080000080000080000080005BAD5B}
   end
+  object ButtonPlayAgain: TButton
+    Left = 184
+    Top = 280
+    Width = 337
+    Height = 57
+    Caption = 'You won! Play again?'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -31
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    Visible = False
+    OnClick = ButtonPlayAgainClick
+  end
   object TimerBall: TTimer
     Interval = 30
     OnTimer = TimerBallTimer
-    Left = 40
+    Left = 16
     Top = 40
   end
   object TimerPaddleLeft: TTimer
@@ -4525,7 +4542,7 @@ object Form1: TForm1
     Enabled = False
     Interval = 20
     OnTimer = TimerPaddleRightTimer
-    Left = 56
+    Left = 48
     Top = 80
   end
 end
